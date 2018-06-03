@@ -23,7 +23,7 @@
           }
         ]
       },
-	  {
+      {
         "text": "hey",
         "intent": "greet",
         "entities": []
@@ -234,6 +234,66 @@
             "end": 30,
             "value": "Italy",
             "entity": "location"
+          }
+        ]
+      },
+      {
+        "text": "My name is Steve",
+        "intent": "inform",
+        "entities": [
+          {
+            "start": 11,
+            "end": 16,
+            "value": "Steve",
+            "entity": "name"
+          }
+        ]
+      },
+      {
+        "text": "I'm in the course of MADT",
+        "intent": "inform",
+        "entities": [
+          {
+            "start": 21,
+            "end": 25,
+            "value": "MADT",
+            "entity": "program"
+          }
+        ]
+      },
+      {
+        "text": "My program is Cloud Computing for Big Data",
+        "intent": "inform",
+        "entities": [
+          {
+            "start": 14,
+            "end": 42,
+            "value": "Cloud Computing for Big Data",
+            "entity": "program"
+          }
+        ]
+      },
+      {
+        "text": "My program is CCBT",
+        "intent": "inform",
+        "entities": [
+          {
+            "start": 14,
+            "end": 18,
+            "value": "CCBT",
+            "entity": "program"
+          }
+        ]
+      },
+      {
+        "text": "I'm taking MADT",
+        "intent": "inform",
+        "entities": [
+          {
+            "start": 11,
+            "end": 15,
+            "value": "MADT",
+            "entity": "program"
           }
         ]
       }
