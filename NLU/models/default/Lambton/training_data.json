@@ -1,0 +1,312 @@
+{
+  "rasa_nlu_data": {
+    "entity_synonyms": [],
+    "common_examples": [
+      {
+        "intent": "greet",
+        "text": "Hello"
+      },
+      {
+        "intent": "goodbye",
+        "text": "goodbye"
+      },
+      {
+        "entities": [
+          {
+            "value": "Berlin",
+            "start": 22,
+            "end": 28,
+            "entity": "location"
+          }
+        ],
+        "intent": "inform",
+        "text": "What's the weather in Berlin at the moment?"
+      },
+      {
+        "intent": "greet",
+        "text": "hey"
+      },
+      {
+        "intent": "greet",
+        "text": "hello"
+      },
+      {
+        "intent": "greet",
+        "text": "hi"
+      },
+      {
+        "intent": "greet",
+        "text": "heya"
+      },
+      {
+        "intent": "greet",
+        "text": "howdy"
+      },
+      {
+        "intent": "greet",
+        "text": "hey there"
+      },
+      {
+        "intent": "goodbye",
+        "text": "bye"
+      },
+      {
+        "intent": "goodbye",
+        "text": "goodbye"
+      },
+      {
+        "intent": "goodbye",
+        "text": "bye bye"
+      },
+      {
+        "intent": "goodbye",
+        "text": "see ya"
+      },
+      {
+        "intent": "goodbye",
+        "text": "see you later"
+      },
+      {
+        "intent": "inform",
+        "text": "What's the weather today?"
+      },
+      {
+        "entities": [
+          {
+            "value": "London",
+            "start": 22,
+            "end": 28,
+            "entity": "location"
+          }
+        ],
+        "intent": "inform",
+        "text": "What's the weather in London today?"
+      },
+      {
+        "entities": [
+          {
+            "value": "Paris",
+            "start": 30,
+            "end": 35,
+            "entity": "location"
+          }
+        ],
+        "intent": "inform",
+        "text": "Show me what's the weather in Paris"
+      },
+      {
+        "entities": [
+          {
+            "value": "Vilnius",
+            "start": 32,
+            "end": 39,
+            "entity": "location"
+          }
+        ],
+        "intent": "inform",
+        "text": "I wonder what is the weather in Vilnius right now?"
+      },
+      {
+        "intent": "inform",
+        "text": "what is the weather?"
+      },
+      {
+        "intent": "inform",
+        "text": "Tell me the weather"
+      },
+      {
+        "entities": [
+          {
+            "value": "Barcelona",
+            "start": 23,
+            "end": 32,
+            "entity": "location"
+          }
+        ],
+        "intent": "inform",
+        "text": "Is the weather nice in Barcelona today?"
+      },
+      {
+        "entities": [
+          {
+            "value": "London",
+            "start": 14,
+            "end": 20,
+            "entity": "location"
+          }
+        ],
+        "intent": "inform",
+        "text": "I am going to London today and I wonder what is the weather out there?"
+      },
+      {
+        "entities": [
+          {
+            "value": "Amsterdam",
+            "start": 25,
+            "end": 34,
+            "entity": "location"
+          }
+        ],
+        "intent": "inform",
+        "text": "I am planning my trip to Amsterdam. What is the weather out there?"
+      },
+      {
+        "entities": [
+          {
+            "value": "Dublin",
+            "start": 23,
+            "end": 29,
+            "entity": "location"
+          }
+        ],
+        "intent": "inform",
+        "text": "Show me the weather in Dublin, please"
+      },
+      {
+        "entities": [
+          {
+            "value": "London",
+            "start": 3,
+            "end": 9,
+            "entity": "location"
+          }
+        ],
+        "intent": "inform",
+        "text": "in London"
+      },
+      {
+        "entities": [
+          {
+            "value": "Lithuania",
+            "start": 0,
+            "end": 9,
+            "entity": "location"
+          }
+        ],
+        "intent": "inform",
+        "text": "Lithuania"
+      },
+      {
+        "entities": [
+          {
+            "value": "Italy",
+            "start": 14,
+            "end": 19,
+            "entity": "location"
+          }
+        ],
+        "intent": "inform",
+        "text": "Oh, sorry, in Italy"
+      },
+      {
+        "entities": [
+          {
+            "value": "Vilnius",
+            "start": 23,
+            "end": 30,
+            "entity": "location"
+          }
+        ],
+        "intent": "inform",
+        "text": "Tell me the weather in Vilnius"
+      },
+      {
+        "entities": [
+          {
+            "value": "Italy",
+            "start": 25,
+            "end": 30,
+            "entity": "location"
+          }
+        ],
+        "intent": "inform",
+        "text": "The weather condition in Italy"
+      },
+      {
+        "entities": [
+          {
+            "value": "Steve",
+            "start": 11,
+            "end": 16,
+            "entity": "name"
+          }
+        ],
+        "intent": "inform",
+        "text": "My name is Steve"
+      },
+      {
+        "entities": [
+          {
+            "value": "MADT",
+            "start": 21,
+            "end": 25,
+            "entity": "program"
+          }
+        ],
+        "intent": "inform",
+        "text": "I'm in the course of MADT"
+      },
+      {
+        "entities": [
+          {
+            "value": "Cloud Computing for Big Data",
+            "start": 14,
+            "end": 42,
+            "entity": "program"
+          }
+        ],
+        "intent": "inform",
+        "text": "My program is Cloud Computing for Big Data"
+      },
+      {
+        "entities": [
+          {
+            "value": "CCBT",
+            "start": 14,
+            "end": 18,
+            "entity": "program"
+          }
+        ],
+        "intent": "inform",
+        "text": "My program is CCBT"
+      },
+      {
+        "entities": [
+          {
+            "value": "MADT",
+            "start": 11,
+            "end": 15,
+            "entity": "program"
+          }
+        ],
+        "intent": "inform",
+        "text": "I'm taking MADT"
+      },
+      {
+        "entities": [
+          {
+            "value": "Larissa",
+            "start": 5,
+            "end": 12,
+            "entity": "name"
+          }
+        ],
+        "intent": "inform",
+        "text": "I am Larissa"
+      },
+      {
+        "entities": [
+          {
+            "value": "Edward",
+            "start": 8,
+            "end": 14,
+            "entity": "name"
+          }
+        ],
+        "intent": "inform",
+        "text": "Call me Edward"
+      }
+    ],
+    "regex_features": []
+  }
+}
