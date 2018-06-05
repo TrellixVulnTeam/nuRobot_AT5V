@@ -1,0 +1,33 @@
+action_factory: null
+action_names:
+- utter_greet
+- utter_thank
+- utter_bye
+- action_example
+actions:
+- utter_greet
+- utter_thank
+- utter_bye
+- actions.ActionExample
+config:
+  store_entities_as_slots: true
+entities:
+- example_entity
+intents:
+- greet
+- thank
+- bye
+- deny
+- affirm
+slots:
+  example_slot:
+    initial_value: null
+    type: rasa_core.slots.UnfeaturizedSlot
+templates:
+  utter_bye:
+  - text: Goodbye
+  utter_greet:
+  - text: Hey, how can I help you?
+  utter_thank:
+  - text: You're welcome!
+topics: []

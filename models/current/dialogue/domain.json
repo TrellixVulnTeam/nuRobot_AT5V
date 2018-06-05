@@ -1,0 +1,16 @@
+{
+  "features": [
+    "intent_greet",
+    "intent_thank",
+    "intent_bye",
+    "intent_deny",
+    "intent_affirm",
+    "entity_example_entity",
+    "prev_action_listen",
+    "prev_action_restart",
+    "prev_utter_greet",
+    "prev_utter_thank",
+    "prev_utter_bye",
+    "prev_action_example"
+  ]
+}
