@@ -29,4 +29,3 @@ actions:
   - utter_greet
   - utter_thank
   - utter_bye
-  - actions.ActionExample
