@@ -40,7 +40,9 @@ def train_nlu(project='Lambton'):
     from rasa_nlu import config
 
     training_data = load_data('./NLU/data/nuRobot-data.json')    # + project + '/intents')
+    print("*** Training data :" + str(training_data.intents))
     trainer = Trainer(config.load('./NLU/config_spacy.json'))    # projects/' + project + '/config_spacy.yml'))
+    print("*** Config :" + str(trainer.config))
     trainer.train(training_data)
     #model_directory = trainer.persist('./NLU/models/default/' + project +'/', fixed_model_name='dialogue')
     model_directory = trainer.persist('./NLU/models/', fixed_model_name=project)
@@ -61,8 +63,9 @@ def train_dialogue(project='Lambton'):
     agent.train(
         training_data,
         augmentation_factor=50,
-        epochs=100,
         batch_size=10,
+        epochs=500,
+        max_training_samples=300,
         validation_split=0.2
     )
 
@@ -71,9 +74,9 @@ def train_dialogue(project='Lambton'):
 
 
 def train_online(project='Lambton'):
-    domain_file = 'Core/models/' + project + '/dialogue/domain.yml'
-    model_path = 'NLU/models/default/' + project,
-    training_data_file = 'Core/models/'+ project + '/stories/stories.md'
+    domain_file = './Core/models/' + project + '/dialogue/domain.yml'
+    model_path = './NLU/models/default/' + project,
+    training_data_file = './Core/models/'+ project + '/stories/stories.md'
 
     agent = Agent(domain_file, policies=[MemoizationPolicy(), KerasPolicy()])
 
@@ -81,7 +84,7 @@ def train_online(project='Lambton'):
                        input_channel=ConsoleInputChannel(),
                        max_history=2,
                        batch_size=10,
-                       epochs=500,
+                       epochs=250,
                        max_training_samples=300,
                        validation_split=0.2)
 

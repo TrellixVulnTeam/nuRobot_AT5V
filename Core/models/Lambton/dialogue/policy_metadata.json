@@ -1,14 +1,22 @@
 {
-  "max_history": 3,
+  "max_histories": [
+    3,
+    5
+  ],
+  "ensemble_name": "rasa_core.policies.ensemble.SimplePolicyEnsemble",
   "action_fingerprints": {
-    "action_listen": {
+    "utter_goodbye": {
       "slots": []
+    },
+    "action_listen": {
+      "slots": [
+        "program"
+      ]
     }
   },
-  "ensemble_name": "rasa_core.policies.ensemble.SimplePolicyEnsemble",
   "policy_names": [
     "rasa_core.policies.memoization.MemoizationPolicy",
-    "rasa_core.policies.keras_policy.KerasPolicy"
+    "lib.policy.nuRobotPolicy"
   ],
-  "rasa_core": "0.8.2"
+  "rasa_core": "0.9.0a6"
 }

@@ -1,5 +1,6 @@
 {
   "rasa_nlu_data": {
+    "entity_synonyms": [],
     "common_examples": [
       {
         "text": "Hello",
@@ -13,13 +14,13 @@
         "entities": [
           {
             "start": 22,
-            "end": 28,
             "value": "Berlin",
+            "end": 28,
             "entity": "location"
           }
         ],
         "text": "What's the weather in Berlin at the moment?",
-        "intent": "inform_location"
+        "intent": "ask_weather"
       },
       {
         "text": "hey",
@@ -67,15 +68,15 @@
       },
       {
         "text": "you are a chatbot",
-        "intent": "you_are_chatbot"
+        "intent": "are_you_bot"
       },
       {
         "text": "you are a machine",
-        "intent": "you_are_chatbot"
+        "intent": "are_you_bot"
       },
       {
         "text": "you are a circuit",
-        "intent": "you_are_chatbot"
+        "intent": "are_you_bot"
       },
       {
         "text": "What's the weather today?",
@@ -85,37 +86,37 @@
         "entities": [
           {
             "start": 22,
-            "end": 28,
             "value": "London",
+            "end": 28,
             "entity": "location"
           }
         ],
         "text": "What's the weather in London today?",
-        "intent": "inform_location"
+        "intent": "ask_weather"
       },
       {
         "entities": [
           {
             "start": 30,
-            "end": 35,
             "value": "Paris",
+            "end": 35,
             "entity": "location"
           }
         ],
         "text": "Show me what's the weather in Paris",
-        "intent": "inform_location"
+        "intent": "ask_weather"
       },
       {
         "entities": [
           {
             "start": 32,
-            "end": 39,
             "value": "Vilnius",
+            "end": 39,
             "entity": "location"
           }
         ],
         "text": "I wonder what is the weather in Vilnius right now?",
-        "intent": "inform_name"
+        "intent": "ask_weather"
       },
       {
         "text": "what is the weather?",
@@ -129,56 +130,56 @@
         "entities": [
           {
             "start": 23,
-            "end": 32,
             "value": "Barcelona",
+            "end": 32,
             "entity": "location"
           }
         ],
         "text": "Is the weather nice in Barcelona today?",
-        "intent": "inform_location"
+        "intent": "ask_weather"
       },
       {
         "entities": [
           {
             "start": 14,
-            "end": 20,
             "value": "London",
+            "end": 20,
             "entity": "location"
           }
         ],
         "text": "I am going to London today and I wonder what is the weather out there?",
-        "intent": "inform_location"
+        "intent": "ask_weather"
       },
       {
         "entities": [
           {
             "start": 25,
-            "end": 34,
             "value": "Amsterdam",
+            "end": 34,
             "entity": "location"
           }
         ],
         "text": "I am planning my trip to Amsterdam. What is the weather out there?",
-        "intent": "inform_location"
+        "intent": "ask_weather"
       },
       {
         "entities": [
           {
             "start": 23,
-            "end": 29,
             "value": "Dublin",
+            "end": 29,
             "entity": "location"
           }
         ],
         "text": "Show me the weather in Dublin, please",
-        "intent": "inform_location"
+        "intent": "ask_weather"
       },
       {
         "entities": [
           {
             "start": 3,
-            "end": 9,
             "value": "London",
+            "end": 9,
             "entity": "location"
           }
         ],
@@ -189,8 +190,8 @@
         "entities": [
           {
             "start": 0,
-            "end": 9,
             "value": "Lithuania",
+            "end": 9,
             "entity": "location"
           }
         ],
@@ -201,8 +202,8 @@
         "entities": [
           {
             "start": 14,
-            "end": 19,
             "value": "Italy",
+            "end": 19,
             "entity": "location"
           }
         ],
@@ -213,33 +214,33 @@
         "entities": [
           {
             "start": 23,
-            "end": 30,
             "value": "Vilnius",
+            "end": 30,
             "entity": "location"
           }
         ],
         "text": "Tell me the weather in Vilnius",
-        "intent": "inform_name"
+        "intent": "ask_weather"
       },
       {
         "entities": [
           {
             "start": 25,
-            "end": 30,
             "value": "Italy",
+            "end": 30,
             "entity": "location"
           }
         ],
         "text": "The weather condition in Italy",
-        "intent": "inform_location"
+        "intent": "ask_weather"
       },
       {
         "entities": [
           {
             "start": 11,
-            "end": 16,
             "value": "Steve",
-            "entity": "name"
+            "end": 16,
+            "entity": "username"
           }
         ],
         "text": "My name is Steve",
@@ -249,8 +250,8 @@
         "entities": [
           {
             "start": 21,
-            "end": 25,
             "value": "MADT",
+            "end": 25,
             "entity": "program"
           }
         ],
@@ -261,8 +262,8 @@
         "entities": [
           {
             "start": 14,
-            "end": 42,
             "value": "Cloud Computing for Big Data",
+            "end": 42,
             "entity": "program"
           }
         ],
@@ -273,8 +274,8 @@
         "entities": [
           {
             "start": 14,
-            "end": 18,
             "value": "CCBT",
+            "end": 18,
             "entity": "program"
           }
         ],
@@ -285,8 +286,8 @@
         "entities": [
           {
             "start": 11,
-            "end": 15,
             "value": "MADT",
+            "end": 15,
             "entity": "program"
           }
         ],
@@ -297,9 +298,9 @@
         "entities": [
           {
             "start": 5,
-            "end": 12,
             "value": "Larissa",
-            "entity": "name"
+            "end": 12,
+            "entity": "username"
           }
         ],
         "text": "I am Larissa",
@@ -309,9 +310,9 @@
         "entities": [
           {
             "start": 8,
-            "end": 14,
             "value": "Edward",
-            "entity": "name"
+            "end": 14,
+            "entity": "username"
           }
         ],
         "text": "Call me Edward",
@@ -367,11 +368,11 @@
       },
       {
         "text": "Are you real?",
-        "intent": "are_you_real"
+        "intent": "are_you_bot"
       },
       {
         "text": "Are you alive?",
-        "intent": "are_you_real"
+        "intent": "are_you_bot"
       },
       {
         "text": "No problem",
@@ -450,6 +451,182 @@
         "intent": "hug_me"
       },
       {
+        "text": "you are funny",
+        "intent": "you_are_funny"
+      },
+      {
+        "text": "you are naughty",
+        "intent": "you_are_funny"
+      },
+      {
+        "text": "you are crazy",
+        "intent": "you_are_funny"
+      },
+      {
+        "text": "Are you ready?",
+        "intent": "are_you_ready"
+      },
+      {
+        "text": "ready to talk?",
+        "intent": "are_you_ready"
+      },
+      {
+        "text": "ready to chat?",
+        "intent": "are_you_ready"
+      },
+      {
+        "text": "ready to speak?",
+        "intent": "are_you_ready"
+      },
+      {
+        "text": "Are you real?",
+        "intent": "are_you_real"
+      },
+      {
+        "text": "Are you alive?",
+        "intent": "are_you_real"
+      },
+      {
+        "text": "You're right.",
+        "intent": "you_are_right"
+      },
+      {
+        "text": "You are correct",
+        "intent": "you_are_right"
+      },
+      {
+        "text": "yes, You are correct",
+        "intent": "you_are_right"
+      },
+      {
+        "text": "Are you sure",
+        "intent": "are_you_sure"
+      },
+      {
+        "text": "Make sure",
+        "intent": "are_you_sure"
+      },
+      {
+        "text": "are you confident?",
+        "intent": "are_you_sure"
+      },
+      {
+        "text": "Talk to me",
+        "intent": "talk_to_me"
+      },
+      {
+        "text": "talk to me",
+        "intent": "talk_to_me"
+      },
+      {
+        "text": "Will you talk to me",
+        "intent": "talk_to_me"
+      },
+      {
+        "text": "Please talk to me",
+        "intent": "talk_to_me"
+      },
+      {
+        "text": "Are you there?",
+        "intent": "are_you_there"
+      },
+      {
+        "text": "you there?",
+        "intent": "are_you_there"
+      },
+      {
+        "text": "No problem",
+        "intent": "no_problem"
+      },
+      {
+        "text": "No probs",
+        "intent": "no_problem"
+      },
+      {
+        "text": "Not an issue",
+        "intent": "no_problem"
+      },
+      {
+        "text": "No worries",
+        "intent": "no_problem"
+      },
+      {
+        "text": "Not a issue",
+        "intent": "no_problem"
+      },
+      {
+        "text": "What's up?",
+        "intent": "whats_up"
+      },
+      {
+        "text": "What's going on?",
+        "intent": "whats_up"
+      },
+      {
+        "text": "What's ahead?",
+        "intent": "whats_up"
+      },
+      {
+        "text": "yes",
+        "intent": "confirmation"
+      },
+      {
+        "text": "no",
+        "intent": "confirmation"
+      },
+      {
+        "text": "cancel",
+        "intent": "confirmation"
+      },
+      {
+        "text": "hold on",
+        "intent": "hold_on"
+      },
+      {
+        "text": "hang on",
+        "intent": "hold_on"
+      },
+      {
+        "text": "hang in there",
+        "intent": "hold_on"
+      },
+      {
+        "text": "Give me a hug!",
+        "intent": "hug_me"
+      },
+      {
+        "text": "Can you Give me a hug?",
+        "intent": "hug_me"
+      },
+      {
+        "text": "Can you hug me?",
+        "intent": "hug_me"
+      },
+      {
+        "text": "I don't care",
+        "intent": "dont_care"
+      },
+      {
+        "text": "who cares?",
+        "intent": "dont_care"
+      },
+      {
+        "text": "What do you mean?",
+        "intent": "what_do_you_mean"
+      },
+      {
+        "text": "You're wrong.",
+        "intent": "you_are_wrong"
+      },
+      {
+        "text": "that's a wrong answer",
+        "intent": "you_are_wrong"
+      },
+      {
+        "text": "That's not true",
+        "intent": "you_are_wrong"
+      },
+      {
         "text": "Greetings!",
         "intent": "greet"
       },
@@ -465,9 +642,9 @@
         "entities": [
           {
             "start": 6,
-            "end": 11,
             "value": "Susan",
-            "entity": "name"
+            "end": 11,
+            "entity": "username"
           }
         ],
         "text": "Sorry Susan, I'm having trouble understanding your question.",
@@ -477,9 +654,9 @@
         "entities": [
           {
             "start": 54,
-            "end": 59,
             "value": "Susan",
-            "entity": "name"
+            "end": 59,
+            "entity": "username"
           }
         ],
         "text": "I think I may have misunderstood your last statement, Susan.",
@@ -489,9 +666,9 @@
         "entities": [
           {
             "start": 11,
-            "end": 16,
             "value": "Susan",
-            "entity": "name"
+            "end": 16,
+            "entity": "username"
           }
         ],
         "text": "I'm sorry, Susan. I don't quite grasp what you said.",
@@ -501,8 +678,8 @@
         "entities": [
           {
             "start": 22,
-            "end": 36,
             "value": "Cestar College",
+            "end": 36,
             "entity": "location"
           }
         ],
@@ -513,8 +690,8 @@
         "entities": [
           {
             "start": 16,
-            "end": 20,
             "value": "here",
+            "end": 20,
             "entity": "location"
           }
         ],
@@ -529,8 +706,8 @@
         "entities": [
           {
             "start": 42,
-            "end": 46,
             "value": "CSAT",
+            "end": 46,
             "entity": "program"
           }
         ],
@@ -541,16 +718,23 @@
         "entities": [
           {
             "start": 29,
-            "end": 33,
             "value": "BMAT",
+            "end": 33,
             "entity": "program"
           }
         ],
         "text": "How can I get information of BMAT program",
         "intent": "ask_program"
+      },
+      {
+        "text": "I need a hug.",
+        "intent": "hug_me"
+      },
+      {
+        "text": "Show me my program schedule",
+        "intent": "ask_program_schedule"
       }
     ],
-    "entity_synonyms": [],
     "regex_features": []
   }
 }

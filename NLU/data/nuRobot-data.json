@@ -13,7 +13,7 @@
       },
       {
         "text": "What's the weather in Berlin at the moment?",
-        "intent": "inform_location",
+        "intent": "ask_weather",
         "entities": [
           {
             "start": 22,
@@ -80,17 +80,17 @@
       },
       {
         "text": "you are a chatbot",
-        "intent": "you_are_chatbot",
+        "intent": "are_you_bot",
         "entities": []
       },
       {
         "text": "you are a machine",
-        "intent": "you_are_chatbot",
+        "intent": "are_you_bot",
         "entities": []
       },
       {
         "text": "you are a circuit",
-        "intent": "you_are_chatbot",
+        "intent": "are_you_bot",
         "entities": []
       },
       {
@@ -100,7 +100,7 @@
       },
       {
         "text": "What's the weather in London today?",
-        "intent": "inform_location",
+        "intent": "ask_weather",
         "entities": [
           {
             "start": 22,
@@ -112,7 +112,7 @@
       },
       {
         "text": "Show me what's the weather in Paris",
-        "intent": "inform_location",
+        "intent": "ask_weather",
         "entities": [
           {
             "start": 30,
@@ -124,7 +124,7 @@
       },
       {
         "text": "I wonder what is the weather in Vilnius right now?",
-        "intent": "inform_name",
+        "intent": "ask_weather",
         "entities": [
           {
             "start": 32,
@@ -146,7 +146,7 @@
       },
       {
         "text": "Is the weather nice in Barcelona today?",
-        "intent": "inform_location",
+        "intent": "ask_weather",
         "entities": [
           {
             "start": 23,
@@ -158,7 +158,7 @@
       },
       {
         "text": "I am going to London today and I wonder what is the weather out there?",
-        "intent": "inform_location",
+        "intent": "ask_weather",
         "entities": [
           {
             "start": 14,
@@ -170,7 +170,7 @@
       },
       {
         "text": "I am planning my trip to Amsterdam. What is the weather out there?",
-        "intent": "inform_location",
+        "intent": "ask_weather",
         "entities": [
           {
             "start": 25,
@@ -182,7 +182,7 @@
       },
       {
         "text": "Show me the weather in Dublin, please",
-        "intent": "inform_location",
+        "intent": "ask_weather",
         "entities": [
           {
             "start": 23,
@@ -230,7 +230,7 @@
       },
       {
         "text": "Tell me the weather in Vilnius",
-        "intent": "inform_name",
+        "intent": "ask_weather",
         "entities": [
           {
             "start": 23,
@@ -242,7 +242,7 @@
       },
       {
         "text": "The weather condition in Italy",
-        "intent": "inform_location",
+        "intent": "ask_weather",
         "entities": [
           {
             "start": 25,
@@ -260,7 +260,7 @@
             "start": 11,
             "end": 16,
             "value": "Steve",
-            "entity": "name"
+            "entity": "username"
           }
         ]
       },
@@ -320,7 +320,7 @@
             "start": 5,
             "end": 12,
             "value": "Larissa",
-            "entity": "name"
+            "entity": "username"
           }
         ]
       },
@@ -332,7 +332,7 @@
             "start": 8,
             "end": 14,
             "value": "Edward",
-            "entity": "name"
+            "entity": "username"
           }
         ]
       },
@@ -398,12 +398,12 @@
       },
       {
         "text": "Are you real?",
-        "intent": "are_you_real",
+        "intent": "are_you_bot",
         "entities": []
       },
       {
         "text": "Are you alive?",
-        "intent": "are_you_real",
+        "intent": "are_you_bot",
         "entities": []
       },
       {
@@ -502,6 +502,226 @@
         "entities": []
       },
       {
+        "text": "you are funny",
+        "intent": "you_are_funny",
+        "entities": []
+      },
+      {
+        "text": "you are naughty",
+        "intent": "you_are_funny",
+        "entities": []
+      },
+      {
+        "text": "you are crazy",
+        "intent": "you_are_funny",
+        "entities": []
+      },
+      {
+        "text": "Are you ready?",
+        "intent": "are_you_ready",
+        "entities": []
+      },
+      {
+        "text": "ready to talk?",
+        "intent": "are_you_ready",
+        "entities": []
+      },
+      {
+        "text": "ready to chat?",
+        "intent": "are_you_ready",
+        "entities": []
+      },
+      {
+        "text": "ready to speak?",
+        "intent": "are_you_ready",
+        "entities": []
+      },
+      {
+        "text": "Are you real?",
+        "intent": "are_you_real",
+        "entities": []
+      },
+      {
+        "text": "Are you alive?",
+        "intent": "are_you_real",
+        "entities": []
+      },
+      {
+        "text": "You're right.",
+        "intent": "you_are_right",
+        "entities": []
+      },
+      {
+        "text": "You are correct",
+        "intent": "you_are_right",
+        "entities": []
+      },
+      {
+        "text": "yes, You are correct",
+        "intent": "you_are_right",
+        "entities": []
+      },
+      {
+        "text": "Are you sure",
+        "intent": "are_you_sure",
+        "entities": []
+      },
+      {
+        "text": "Make sure",
+        "intent": "are_you_sure",
+        "entities": []
+      },
+      {
+        "text": "are you confident?",
+        "intent": "are_you_sure",
+        "entities": []
+      },
+      {
+        "text": "Talk to me",
+        "intent": "talk_to_me",
+        "entities": []
+      },
+      {
+        "text": "talk to me",
+        "intent": "talk_to_me",
+        "entities": []
+      },
+      {
+        "text": "Will you talk to me",
+        "intent": "talk_to_me",
+        "entities": []
+      },
+      {
+        "text": "Please talk to me",
+        "intent": "talk_to_me",
+        "entities": []
+      },
+      {
+        "text": "Are you there?",
+        "intent": "are_you_there",
+        "entities": []
+      },
+      {
+        "text": "you there?",
+        "intent": "are_you_there",
+        "entities": []
+      },
+      {
+        "text": "No problem",
+        "intent": "no_problem",
+        "entities": []
+      },
+      {
+        "text": "No probs",
+        "intent": "no_problem",
+        "entities": []
+      },
+      {
+        "text": "Not an issue",
+        "intent": "no_problem",
+        "entities": []
+      },
+      {
+        "text": "No worries",
+        "intent": "no_problem",
+        "entities": []
+      },
+      {
+        "text": "Not a issue",
+        "intent": "no_problem",
+        "entities": []
+      },
+      {
+        "text": "What's up?",
+        "intent": "whats_up",
+        "entities": []
+      },
+      {
+        "text": "What's going on?",
+        "intent": "whats_up",
+        "entities": []
+      },
+      {
+        "text": "What's ahead?",
+        "intent": "whats_up",
+        "entities": []
+      },
+      {
+        "text": "yes",
+        "intent": "confirmation",
+        "entities": []
+      },
+      {
+        "text": "no",
+        "intent": "confirmation",
+        "entities": []
+      },
+      {
+        "text": "cancel",
+        "intent": "confirmation",
+        "entities": []
+      },
+      {
+        "text": "hold on",
+        "intent": "hold_on",
+        "entities": []
+      },
+      {
+        "text": "hang on",
+        "intent": "hold_on",
+        "entities": []
+      },
+      {
+        "text": "hang in there",
+        "intent": "hold_on",
+        "entities": []
+      },
+      {
+        "text": "Give me a hug!",
+        "intent": "hug_me",
+        "entities": []
+      },
+      {
+        "text": "Can you Give me a hug?",
+        "intent": "hug_me",
+        "entities": []
+      },
+      {
+        "text": "Can you hug me?",
+        "intent": "hug_me",
+        "entities": []
+      },
+      {
+        "text": "I don't care",
+        "intent": "dont_care",
+        "entities": []
+      },
+      {
+        "text": "who cares?",
+        "intent": "dont_care",
+        "entities": []
+      },
+      {
+        "text": "What do you mean?",
+        "intent": "what_do_you_mean",
+        "entities": []
+      },
+      {
+        "text": "You're wrong.",
+        "intent": "you_are_wrong",
+        "entities": []
+      },
+      {
+        "text": "that's a wrong answer",
+        "intent": "you_are_wrong",
+        "entities": []
+      },
+      {
+        "text": "That's not true",
+        "intent": "you_are_wrong",
+        "entities": []
+      },
+      {
         "text": "Greetings!",
         "intent": "greet",
         "entities": []
@@ -524,7 +744,7 @@
             "start": 6,
             "end": 11,
             "value": "Susan",
-            "entity": "name"
+            "entity": "username"
           }
         ]
       },
@@ -536,7 +756,7 @@
             "start": 54,
             "end": 59,
             "value": "Susan",
-            "entity": "name"
+            "entity": "username"
           }
         ]
       },
@@ -548,7 +768,7 @@
             "start": 11,
             "end": 16,
             "value": "Susan",
-            "entity": "name"
+            "entity": "username"
           }
         ]
       },
@@ -604,6 +824,16 @@
             "entity": "program"
           }
         ]
+      },
+      {
+        "text": "I need a hug.",
+        "intent": "hug_me",
+        "entities": []
+      },
+      {
+        "text": "Show me my program schedule",
+        "intent": "ask_program_schedule",
+        "entities": []
       }
     ]
   }
