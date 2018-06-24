@@ -13,13 +13,18 @@ def train_nlu(data, configs, model_dir):
 
 def run_nlu():
     interpreter = Interpreter.load('./NLU/models/default/Lambton')
+    print("\n===========================================\n")
     print(interpreter.parse("I am planning to visit Lambton College to check MADT classes."))
-    print("===========================================")
+    print("\n===========================================\n")
     print(interpreter.parse("You can call me Thomas."))
-    print("===========================================")
+    print("\n===========================================\n")
     print(interpreter.parse("I am Shakira."))
+    print("\n===========================================\n")
+    print(interpreter.parse("Can you give me a hug?"))
+    print("\n===========================================\n")
+    print(interpreter.parse("What is the weather in Toronto?"))
 
 
 if __name__ == '__main__':
-    #train_nlu('./NLU/data/nuRobot-data.json', './NLU/config_spacy.json', './NLU/models/')
+    train_nlu('./NLU/data/nuRobot-data.json', './NLU/config_spacy.json', './NLU/models/')
     run_nlu()

@@ -1,5 +1,0 @@
-{
-  "pipeline":"spacy_sklearn",
-  "path":"./NLU/models/default/Lambton",
-  "data":"./NLU/data/nuRobot_data.json"
-}
