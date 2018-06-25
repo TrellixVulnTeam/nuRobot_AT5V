@@ -1,0 +1,206 @@
+action_factory: null
+action_names:
+- utter_intent_hey
+- action_weather
+- utter_action_weather
+- utter_greet
+- utter_thank
+- utter_thank_you
+- utter_goodbye
+- utter_deny
+- utter_affirm
+- utter_ask_weather
+- utter_are_you_bot
+- utter_inform_location
+- utter_inform_name
+- utter_ask_program
+- utter_ask_name
+- utter_fallback
+- utter_hold_on
+- utter_hug_me
+- utter_howto_print
+- utter_ask_program_schedule
+- utter_you_are_funny
+- utter_are_you_real
+- utter_you_are_right
+- utter_are_you_sure
+- utter_talk_to_me
+- utter_are_you_there
+- utter_whats_up
+- utter_confirmation
+- utter_dont_care
+- utter_sorry
+- utter_what_do_you_mean
+- utter_you_are_wrong
+- utter_are_you_ready
+actions:
+- utter_intent_hey
+- actions.ActionWeather
+- utter_action_weather
+- utter_greet
+- utter_thank
+- utter_thank_you
+- utter_goodbye
+- utter_deny
+- utter_affirm
+- utter_ask_weather
+- utter_are_you_bot
+- utter_inform_location
+- utter_inform_name
+- utter_ask_program
+- utter_ask_name
+- utter_fallback
+- utter_hold_on
+- utter_hug_me
+- utter_howto_print
+- utter_ask_program_schedule
+- utter_you_are_funny
+- utter_are_you_real
+- utter_you_are_right
+- utter_are_you_sure
+- utter_talk_to_me
+- utter_are_you_there
+- utter_whats_up
+- utter_confirmation
+- utter_dont_care
+- utter_sorry
+- utter_what_do_you_mean
+- utter_you_are_wrong
+- utter_are_you_ready
+config:
+  store_entities_as_slots: true
+entities:
+- program
+- location
+- username
+intents:
+- intent_hey
+- greet
+- goodbye
+- deny
+- affirm
+- ask_weather
+- are_you_bot
+- inform_location
+- inform_name
+- ask_program
+- fallback
+- hold_on
+- hug_me
+- howto_print
+- ask_program_schedule
+- no_problem
+- thank_you
+slots:
+  location:
+    initial_value: null
+    type: rasa_core.slots.TextSlot
+  program:
+    initial_value: null
+    type: rasa_core.slots.TextSlot
+  username:
+    initial_value: null
+    type: rasa_core.slots.TextSlot
+templates:
+  utter_intent_hey:
+  - text: Hi there!
+  utter_action_weather:
+  - text: Ops
+  utter_affirm:
+  - text: true
+  - text: Precisely
+  - text: Affirmative
+  utter_are_you_bot:
+  - text: Humm...interesting question. I think I'm not human.
+  - text: Yes! R2D2 is my uncle
+  - text: Yes! :)
+  utter_are_you_ready:
+  - text: Yeah
+  - text: yep
+  - text: true
+  - text: Yeah, im ready
+  utter_are_you_real:
+  - text: Yes, I am
+  - text: Yes, i think I am
+  utter_are_you_sure:
+  - text: yes, im
+  - text: true
+  utter_are_you_there:
+  - text: Yeah
+  - text: yep
+  - text: true
+  utter_ask_name:
+  - text: What's your name?
+  utter_ask_program:
+  - text: What's your program?
+  utter_ask_program_schedule:
+  - text: ononononononononon
+  utter_ask_weather:
+  - text: hold_on
+  utter_confirmation:
+  - text: ok sure
+  utter_deny:
+  - text: false
+  - text: Nope
+  - text: Negative
+  - text: Not
+  utter_dont_care:
+  - text: ok
+  utter_fallback:
+  - text: I'm sorry, I didn't understand your question.
+  - text: Sorry, I didn't get that.
+  - text: Say that again?
+  - text: I missed that.
+  utter_goodbye:
+  - text: Goodbye :(
+  - text: bye bye
+  - text: See you later aligator!
+  utter_greet:
+  - text: Hey, how can I help you?
+  - text: Hi {username}!
+  utter_hold_on:
+  - text: ok sure
+  utter_howto_print:
+  - text: ononononononononon
+  utter_hug_me:
+  - text: I wish I could!
+  utter_inform_location:
+  - text: Which location?
+  utter_inform_name:
+  - text: What's your name?
+  utter_no_problem:
+  - text: No worries
+  - text: Not an issue
+  - text: No problem
+  - text: No problema ;)
+  - text: cool
+  - text: thats ok
+  - text: fine
+  - text: thats fine
+  utter_sorry:
+  - text: cool
+  utter_talk_to_me:
+  - text: sure
+  - text: sure its my pleasure
+  utter_thank:
+  - text: You're welcome!
+  - text: No worries!
+  utter_thank_you:
+  - text: Well done!
+  - text: Good job
+  - text: No problem
+  - text: No problema ;)
+  utter_what_do_you_mean:
+  - text: sorry, I dont know better way to explain
+  utter_whats_up:
+  - text: good
+  - text: Nothing
+  utter_you_are_funny:
+  - text: really? Thank you!
+  - text: ha ha ha
+  utter_you_are_right:
+  - text: thanks
+  - text: thank you
+  utter_you_are_wrong:
+  - text: I will correct it, i will learn from you
+topics: []
