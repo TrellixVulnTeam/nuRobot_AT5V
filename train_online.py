@@ -15,9 +15,9 @@ from rasa_core.interpreter import RasaNLUInterpreter
 logger = logging.getLogger(__name__)
 
 
-def run_weather_online(input_channel, interpreter,
-                          domain_file="weather_domain.yml",
-                          training_data_file='data/stories.md'):
+def run_bot_online(input_channel, interpreter,
+                          domain_file="./Core/models/Lambton/dialogue/domain.yml",
+                          training_data_file='./Core/models/Lambton/stories/stories.md'):
     agent = Agent(domain_file,
                   policies=[MemoizationPolicy(), KerasPolicy()],
                   interpreter=interpreter)
@@ -34,5 +34,5 @@ def run_weather_online(input_channel, interpreter,
 
 if __name__ == '__main__':
     logging.basicConfig(level="INFO")
-    nlu_interpreter = RasaNLUInterpreter('./models/nlu/default/weathernlu')
-    run_weather_online(ConsoleInputChannel(), nlu_interpreter)
+    nlu_interpreter = RasaNLUInterpreter('./NLU/models/default/Lambton/')
+    run_bot_online(ConsoleInputChannel(), nlu_interpreter)
