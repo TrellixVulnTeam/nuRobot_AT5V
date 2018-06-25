@@ -2,7 +2,7 @@ from rasa_nlu.training_data import load_data
 from rasa_nlu import config
 from rasa_nlu.model import Trainer
 from rasa_nlu.model import Metadata, Interpreter
-
+import json
 
 def train_nlu(data, configs, model_dir):
     training_data = load_data(data)
@@ -12,19 +12,20 @@ def train_nlu(data, configs, model_dir):
     print(model_directory)
 
 def run_nlu():
-    interpreter = Interpreter.load('./NLU/models/default/Lambton')
+    interpreter = Interpreter.load('./Chatbots/projects/Lambton/models/nlu/default/current')
+    
     print("\n===========================================\n")
-    print(interpreter.parse("I am planning to visit Lambton College to check MADT classes."))
+    print(json.dumps(interpreter.parse("I am planning to visit Lambton College to check MADT classes."), indent=4))
     print("\n===========================================\n")
-    print(interpreter.parse("You can call me Thomas."))
+    print(json.dumps(interpreter.parse("You can call me Thomas."), indent=4))
     print("\n===========================================\n")
-    print(interpreter.parse("I am Shakira."))
+    print(json.dumps(interpreter.parse("I am Shakira."), indent=4))
     print("\n===========================================\n")
-    print(interpreter.parse("Can you give me a hug?"))
+    print(json.dumps(interpreter.parse("Can you give me a hug?"), indent=4))
     print("\n===========================================\n")
-    print(interpreter.parse("What is the weather in Toronto?"))
+    print(json.dumps(interpreter.parse("What is the weather in Toronto?"), indent=4))
 
 
 if __name__ == '__main__':
-    train_nlu('./NLU/data/nuRobot-data.json', './NLU/config_spacy.json', './NLU/models/')
+    #train_nlu('./NLU/data/nuRobot-data.json', './NLU/config_spacy.json', './NLU/models/')
     run_nlu()
